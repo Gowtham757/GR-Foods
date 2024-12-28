@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration & Login</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="./index.js"></script>
+</head>
+<body>
+    <div id="registrationPage" class="form-container">
+        <h2>Register</h2>
+        <form id="registrationForm">
+            <label for="username">Username</label>
+            <input type="text" id="username" required>
+            <span id="usernameError" class="error"></span>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
+            <span id="emailError" class="error"></span>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" required>
+            <span id="passwordError" class="error"></span>
+
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" id="confirmPassword" required>
+            <span id="confirmPasswordError" class="error"></span>
+
+            <button type="button" onclick="validateRegistration()">Register</button>
+        </form>
+        <div class="form-switch">
+            Already have an account? <a href="#" onclick="switchToLogin()">Login</a><br>
+            Guest login.. <a href="home.html">login</a>
+        </div>
+    </div>
+
+    <div id="loginPage" class="form-container" style="display: none;">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="loginEmail">Email</label>
+            <input type="email" id="loginEmail" required>
+            <span id="loginEmailError" class="error"></span>
+
+            <label for="loginPassword">Password</label>
+            <input type="password" id="loginPassword" required>
+            <span id="loginPasswordError" class="error"></span>
+
+            <button type="button" onclick="validateLogin()"><a href="./home.html">Login</a></button>
+        </form>
+        <div class="form-switch">
+            Don’t have an account? <a href="#" onclick="switchToRegister()">Register</a>
+            
+        </div>
+    </div>
+
+   
+</body>
+</html>
