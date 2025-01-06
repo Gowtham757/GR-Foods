@@ -71,6 +71,6 @@ function validateLogin() {
 
     if (isValid) {
         localStorage.setItem('isLoggedIn', 'true');
-        window.location.href = 'index.html';
+        window.location.href = 'home.html';
     }
 }
